@@ -1,0 +1,97 @@
+<div class = "login-Container">
+
+	<table width = "100%" height = "100%">
+        <tr width = "100%" height = "10%"></tr>
+		<tr width = "100%" height = "35%">
+			<td>
+				<img src="images/LoginPageImg.png">
+			</td>
+		</tr>
+		<tr width = "100%" height = "30%">
+			<td>
+				<div class = "login-UserInput">
+<p>
+				<div class="btn-group addFacility-Facility ">
+				 	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" ng-click = "find()">
+				  		<span class="selection" >Select Your Condo</span> &nbsp;&nbsp; <span class="caret"></span>
+				  	</button>
+				  	<ul class="dropdown-menu addFacility-FacilityItems" role="menu">
+				  		<li ng-repeat="s in todos" ng-click="change(s)" ><a>{{s}}</a></li>
+				    	
+				  	</ul>
+				</div>
+			</p>
+					<p><input ng-model="request.UniqueName" class="form-control" type = "text" id = "userId" placeholder = "USER ID"/></p>
+					<p><input ng-model="request.Password" class="form-control" type = "password" id = "password" placeholder = "PASSWORD"/></p>
+<!--
+					<label class="checkbox-inline login-RememberMe">
+			  			<input type="checkbox" class = "btn-large"> Remember Me
+					</label>
+-->
+				</div>
+			</td>
+		</tr>
+		<tr width = "100%" height = "15%">
+			<td>
+				
+				<button ng-click = "login()" class = "btn btn-warning login-btn">LOGIN</button>
+			</td>
+		</tr>
+        <tr width = "100%" height = "10%"></tr>
+
+	</table>
+
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header panel-heading">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Error</h4>
+      </div>
+      <div class="modal-body">
+        {{errorMessage}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Error Alert</h4>
+      </div>
+        
+        
+        
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <h4>Login Error! Please Try Again</h4><br> <h8>For Account issue,Please contact the condo manager office. </h8>
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>
+            
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>

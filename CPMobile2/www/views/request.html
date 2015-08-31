@@ -1,0 +1,50 @@
+<div class = "request-Container">
+
+	<!-- Header -->
+	<div class="nav-header request-Header navbar-fixed-top">
+
+		<table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<a href = "#/main" class = "request-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+		        </td>
+		        <td width = "75%" align = "center">
+		        	My Service Request
+		        </td>
+		        <td width = "15%">
+		        	<a href = "#/add_request" id = "request-AddIcon"><img src="images/icon-add.png"></a>
+		        </td>
+		    </tr>
+		</table>
+
+	</div>
+
+	<!-- Content -->
+	<div class = "request-Content">
+
+        &nbsp;&nbsp; Status:
+      
+       &nbsp;&nbsp;&nbsp; <select ng-model="status.value" ng-options="s for s in status.values" ng-change="search2()" style="width:180px">
+  </select>
+		<br><br><br>
+
+		<table width = "100%" height = "100%" class = "table table-striped  table-hover">
+			<tbody>
+            <tr width = "100%" height = "100%">
+				<th >Subject</th>
+				<th >Submitted</th>
+			</tr>
+			  <div infinite-scroll='loadMore()' infinite-scroll-distance='0'>
+				<tr width = "100%" height = "100%" ng-repeat="item in todos " ng-click="go(item)"  width = "100%" height = "100%">
+					<td width = "60%" align = "center">{{item.subject }}</td>
+					<td width = "60%" align = "center">{{item.createdOn | date:'yyyy-MM-dd' }}</td>
+				</tr>
+                </div>
+			</tbody>
+		</table>
+
+	</div>
+
+</div>

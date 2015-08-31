@@ -1,0 +1,81 @@
+<div class = "facility-Container">
+
+	<!-- Header -->
+	<div class="nav-header navbar-fixed-top facility-Header">
+        
+		<table width = "100%" height = "100%">
+            
+			<tr width = "100%" height = "100%">
+				<td width = "10%" align = "left">
+					<a href = "#/main" class = "facility-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+				</td>
+				<td width = "80%" align = "center">
+					My Booking
+				</td>
+				<td width = "10%" align = "center">
+                    <a href = "#/new_add_facility1" id = "request-AddIcon"><img src="images/icon-add.png"></a>
+
+				</td>
+			</tr>
+            
+		</table>
+		
+	</div>
+
+	<!-- Content -->
+	<div>
+
+        <div class="facility-Content">
+            <table>
+            <tr>    
+                <td>
+                 <button class ="ball3"></button>confirm
+                </td>
+                <td>
+                 <button class ="ball1"></button>reserve 
+                </td>
+                <td>
+                <button class ="ball4"></button>cancel
+                </td>
+                <td>
+                <button class ="ball2"></button>waiting list
+                </td>
+                </tr>
+            </table><br>
+        <table class = "table table-striped">
+			<tbody>
+                 <div infinite-scroll='loadMore()' infinite-scroll-distance='0'>
+				<tr ng-repeat="item in todos " ng-click="go(item)"  >
+                    <td> 
+
+		  	<button ng-class ="item.facilityStatusCode" id = "facility-ListIcon"></button>
+            <span class="glyphicon glyphicon-chevron-right pull-right"></span>
+		    <h4 class="list-group-item-heading">{{item.facilityDescription }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.facilityTypeSessionStartTime | date:'dd/MM/yyyy' }}</h4>
+
+          
+                <p class="list-group-item-text"><h4>{{item.facilityTypeSessionStartTime | date:'hh:mm a' }} - {{item.facilityTypeSessionEndTime | date:'hh:mm a' }}</h4></p>              
+                    </td>         
+				</tr>
+        </div>    
+			</tbody>
+		</table>    
+</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="facilityModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header panel-heading panel-danger">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Warning !</h4>
+      </div>
+      <div class="modal-body">
+        {{warningMessage}}
+      </div>
+    </div>
+  </div>
+</div>

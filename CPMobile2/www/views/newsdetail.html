@@ -1,0 +1,66 @@
+
+<div class = "news-Container">
+	<!-- Header -->
+	<div class="nav-header request-Header navbar-fixed-top">
+		<table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<a href = "#/news" class = "request-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+		        </td>
+		        <td width = "80%" align = "center">
+		        	News Details
+		        </td>
+		        <td width = "10%">
+		        </td>
+		    </tr>
+		</table>
+	</div>
+      
+<!-- Content -->
+	<div class = "news-Content" >	
+      <table width = "100%" height = "100%" class = "table table-striped  table-hover" >	
+			<tbody>          
+                <tr width = "100%" height = "100%">    
+					<td width = "40%" align = "center">                   
+                    Subject:                
+                    </td>	
+                    <td align = "left">
+                       {{todos.subject}} 
+                    </td>
+				</tr>
+                 <tr width = "100%" height = "100%">
+					<td width = "40%" align = "center">                   
+                    Last Updated:                    
+                    </td>
+                     <td align = "left">
+                     {{todos.updateOn| date:'yyyy-MM-dd hh:mm a'}}
+                     </td>
+				</tr>
+				<tr width = "100%" height = "100%">
+					<td width = "40%" align = "center">                   
+                    Detail:                
+                    </td>
+                    <td align = "left">
+                    
+                  <div ng-bind-html="todos.details | nl2br " ></div>
+                    </td>
+				</tr>
+                <tr width = "100%" height = "100%">
+					<td width = "40%" align = "center">                   
+                   Attachment:               
+                    </td>
+                    <td align = "left">                 
+                   <li ng-repeat="item in todos.announcementAttachment">
+                       <a href="" ng-click="window()"> 
+                        {{item.attachmentUrl}}
+                    </a>
+                        </li>
+                    </td>
+				</tr>
+			</tbody>
+		</table>    
+        
+    </div>
+</div>

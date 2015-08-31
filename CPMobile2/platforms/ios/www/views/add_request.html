@@ -1,0 +1,227 @@
+<div class = "addrequest-Container">
+
+	<!-- Header -->
+	<div class="nav-header addrequest-Header navbar-fixed-top">
+
+		<table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<a href = "#/request" class = "addrequest-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+		        </td>
+		        <td width = "75%" align = "center">
+		        	New Service Request
+		        </td>
+		        <td width = "15%">
+
+		        </td>
+		    </tr>
+		</table>
+
+	</div>
+
+	<!-- Content -->
+
+	<div class = "addrequest-Content">    
+        
+		<div class = "addrequest-Inputs">
+       <form name="myForm" novalidate>
+           
+               <span class="input-label"> Type*: </span>
+    <select name="repeatSelect" ng-model="request.ServiceRequestTypeDisplayName" required name="type" style="width:180px">
+      <option ng-repeat="option in todos" >{{option}}</option>
+    </select>
+ <br><br>
+           <div class="list">
+				<span class="input-label">Subject*</span>
+				<input class = "form-control" type = "text" placeholder = "Tap to enter Subject (required)" ng-model ="request.Subject" required name="subject"/>
+              <br>
+			 <span class="input-label">Message*</span>
+				<textarea class = "form-control" placeholder = "Tap to enter Message (required)" ng-model="request.Details" required name="message"></textarea>			        
+		</div>
+                                
+            
+<div class="padding">
+
+    <p ng-show="myForm.subject.$error.required">* Subject is required</p>
+    <p ng-show="myForm.message.$error.required">* Message is required</p>
+        </div><br>
+            
+            		<div class = "addrequest-PhotoImgs">
+			<div class = "addrequest-PhotoImgsHeader">
+				<img src="images/import.png" ng-click="import()">
+				<img src="images/camera.png" ng-click="camera()">
+			</div>
+			<div class = "addrequest-PhotoImgsContent">max 3 pics!!!
+                <table width = "100%" height = "100%">
+                    <tr width = "100%" height = "100%">
+                    <td width = "33%" height = "100%">
+                        <img ng-show="imgURI1 !==undifined" ng-src="{{imgURI1}}" height="80" width = "90"  data-toggle="modal" data-target="#myModal1">
+                        </td>
+                        <td width = "33%" height = "100%">
+                            <img ng-show="imgURI2 !==undifined" ng-src="{{imgURI2}}" height="80" width = "90" data-toggle="modal" data-target="#myModal2">
+                        </td>
+                        <td width = "33%" height = "100%">
+                            <img ng-show="imgURI3 !==undifined" ng-src="{{imgURI3}}" height="80" width = "90" data-toggle="modal" data-target="#myModal3">
+                        </td>
+                        
+                    </tr>
+                </table>                  
+			</div>
+		</div>         
+<br><br>            
+<div class="padding">
+            <button type="button" class="button  btn btn-primary button-block button-positive" ng-disabled="myForm.$invalid" ng-click="submit()">Submit</button>&nbsp;&nbsp;<text ng-show = "val" >wait for 1s...</text>
+        </div>
+ </form>
+
+</div>
+             
+	</div>
+    
+        <!-- ImageModal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabezl">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Picture</h4>
+      </div>        
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <img style = "width : 80%;" ng-src="{{imgURI1}}">
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>       
+        
+      <div class="modal-footer">
+<!--          <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="delete1()">Retake</button>-->
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+   
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Picture</h4>
+      </div>
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <img style = "width : 80%;" ng-src="{{imgURI2}}">
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>
+      <div class="modal-footer">
+<!--          <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="delete2()">Retake</button>-->
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>   
+    
+    
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Picture</h4>
+      </div>
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <img style = "width : 80%;" ng-src="{{imgURI3}}">
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>
+      <div class="modal-footer">
+<!--          <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="delete3()">Retake</button>-->
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+ <!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Error Alert</h4>
+      </div>
+        
+        
+        
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <h4>Error! Please Try Again</h4><br> <h8>For More Information ,Please contact the condo manager office. </h8>
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>
+        
+        
+        
+        
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>    
+
+</div>

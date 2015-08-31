@@ -1,0 +1,80 @@
+<div class = "ads-Container">
+
+	<!-- Header -->
+	<div class="nav-header ads-Header navbar-fixed-top">
+
+		<table width = "100%" height = "100%">
+			<tr width = "100%" height = "100%">
+				<td width = "10%" align = "left">
+					<a href = "#/main" class = "ads-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+				</td>
+				<td width = "75%" align = "center">
+					Classified Ads
+				</td>
+				<td width = "15%">
+					<a href = "#/main" class = "ads-SaveBtn">
+						<img src="images/save.png">
+					</a>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<!-- Content -->
+	<div class = "ads-Content">
+
+		<div class="btn-group">
+		 	<button type="button" class="btn btn-primary dropdown-toggle ads-Category" data-toggle="dropdown">
+		  		<span class="selection">Select a Category</span> &nbsp;&nbsp; <span class="caret"></span>
+		  	</button>
+		  	<ul class="dropdown-menu ads-CategoryItems" role="menu">
+		  		<li><a>Classified ads category 1</a></li>
+		  		<li><a>Classified ads category 2</a></li>
+		  		<li><a>Classified ads category 3</a></li>
+		  		<li><a>Classified ads category 4</a></li>
+		  	</ul>
+		</div>
+		<div class = "ads-Inputs">
+			<p>
+				Subject
+				<input class = "form-control" type = "text" placeholder = "Tap to enter Subject"/>
+			</p>
+			<p>
+				Message
+				<textarea class = "form-control" placeholder = "Tap to enter Message"></textarea>
+			</p>
+		</div>
+		<table width = "100%">
+			<tr width = "100%">
+				<td width = "50%">
+					<p>
+						Contact No
+						<input class = "form-control" type = "text" placeholder = "Contact No"/>
+					</p>
+				</td>
+				<td width = "50%">
+					Expity Date
+					<p class="input-group">
+						<input type="text" class="form-control" placeholder="Expiry Date">
+						<span class="input-group-addon glyphicon glyphicon-calendar"></span>
+					</p>
+
+				</td>
+			</tr>
+		</table>
+
+
+		<div class = "ads-PhotoImgs">
+			<div class = "ads-PhotoImgsHeader">
+				<img ng-click = "importImage()" src="images/import.png">
+				<img ng-click = "captureImage()" src="images/camera.png">
+			</div>
+			<div class = "ads-PhotoImgsContent"></div>
+		</div>
+
+	</div>
+
+</div>

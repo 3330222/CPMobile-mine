@@ -1,0 +1,272 @@
+.facility-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.facility-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.facility-BackBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+#facility-AddIcon img{
+  height: 32px;
+  width: 32px;
+}
+
+.profile-SaveBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+#facility-ListIcon{
+  height: 25px;
+  width: 25px;
+  float: left;
+  margin: 5px 10px 0px 0px;
+  border-radius: 20px;
+}
+
+td{
+  vertical-align: middle;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*
+*
+*
+*
+*
+*
+*
+*/
+/*--------------------------------------------- Add Facility -------------------------------------------*/
+.addFacility-SearchCriteria{
+  min-height: 350px;
+  background-color: #FFF;
+  text-align: center;
+  padding: 5px;
+}
+
+.addFacility-Facility{
+  padding: 10px;
+}
+
+.addFacility-Result{
+  height: 250px;
+  background-color: #555;
+}
+
+.list-group .list-group-item{
+  border-radius: 0px;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*
+*
+*
+*
+*
+*
+*
+*/
+/*-------------------------------------------- Facility Form ------------------------------------------*/
+
+h4{
+  margin: 0 auto;
+}
+
+.facility-Content{
+  background-color: #FFF;
+  padding: 10px;
+}
+
+.facility-Badge-green{
+  background-color: #56B783;
+  border-radius: 3px;
+  font-weight: normal;
+}
+
+.facility-Badge-red{
+  background-color: #F76262;
+  border-radius: 3px;
+  font-weight: normal;
+}
+.WAI {
+     background: yellow;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.RES {
+     background: blue;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.CON {
+     background: green;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.CAN {
+     background: red;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.ball4 {
+     background: red;
+  display: inline-block;
+  border-radius: 50%;
+    height: 20px;
+width: 20px;
+    margin: 0;
+float: left;
+}
+.ball3 {
+     background: green;
+  display: inline-block;
+  border-radius: 50%;
+    height: 20px;
+width: 20px;
+    margin: 0;
+float: left;
+}
+.ball2 {
+     background: yellow;
+   display: inline-block;
+  border-radius: 50%;
+    height: 20px;
+width: 20px;
+    margin: 0;
+float: left;
+}
+.ball1 {
+     background: blue;
+  display: inline-block;
+  border-radius: 50%;
+    height: 20px;
+width: 20px;
+    margin: 0;
+float: left;
+}
+
+.true {
+     background: green;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.false {
+     background: red;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,141 @@
+<div class = "news-Container">
+    
+    
+<!-- Header -->
+	<div class="nav-header facility-Header navbar-fixed-top">
+
+		<table width = "100%" height = "100%">
+			<tr width = "100%" height = "100%">
+				<td width = "10%" align = "left">
+					<a href = "#/new_add_facility1" class = "facility-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+				</td>
+				<td width = "75%" id = "1">
+					 {{product.description}}
+				</td>
+                <td ng-hide = "true" width = "15%" id = "2">
+					{{timemills}}
+				</td>
+			</tr>
+		</table>
+
+	</div>    
+
+ <!-- Content -->
+    
+ <div class = "addFacility-SearchCriteria">   
+    <div  class="responsive-calendar">
+		        <div class="controls">
+		            <a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+		            <h4><span data-head-year></span> <span data-head-month></span></h4>
+		            <a class="pull-right" data-go="next"><div class="btn btn-primary">Next</div></a>
+		        </div><hr/>
+		        <div class="day-headers">
+		          <div class="day header">Monday</div>
+		          <div class="day header">Tue</div>
+		          <div class="day header">Wed</div>
+		          <div class="day header">Thu</div>
+		          <div class="day header">Fri</div>
+		          <div class="day header">Sat</div>
+		          <div class="day header">Sun</div>
+		        </div>
+		        <div class="days" data-group="days">
+		          
+		        </div>
+		      </div>    
+     
+    </div>  
+    
+  <div class = "addFacility-Result">
+      
+      <div class="list-group" ng-hide="val" >
+                
+			  <a class="list-group-item " ng-repeat="item in data1" ng-click="go(item)" >
+			  	<span  class="badge" ng-class= "{'facility-Badge-red ': !item.active , 'facility-Badge-green': item.active } ">{{item.active ? 'Avaliable' : 'Not Avaliable'}} </span>
+			    <p class="list-group-item-text" >{{item.timeFrom | date:'hh:mm a' }}-{{item.timeTo | date:'hh:mm a'}}</p>
+                    </a>
+                
+			</div>   
+      
+      
+    </div>
+ <!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Error Alert</h4>
+      </div>
+        
+        
+        
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <h4>Booking Error! No quota for you on selected date. Try another date</h4><br> <h8>For More Infomation,Please contact the condo manager office. </h8>
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>
+        
+        
+        
+        
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+   <!-- Modal -->  
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Error Alert</h4>
+      </div>
+        
+        
+        
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <h4>Booking Error! Invalide Date selected. Try another date</h4><br> <h8>For More Infomation,Please contact the condo manager office. </h8>
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>    
+        
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+</div>

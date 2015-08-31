@@ -1,0 +1,163 @@
+<div class = "facility-Container">
+
+	<!-- Header -->
+	<div class="nav-header facility-Header navbar-fixed-top">
+
+		<table width = "100%" height = "100%">
+			<tr width = "100%" height = "100%">
+				<td width = "10%" align = "left">
+					<a href = "#/new_add_facility1" class = "facility-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+				</td>
+				<td width = "75%" align = "center">
+					Confirm This Booking
+				</td>
+				<td width = "15%" align = "center">
+<!--					<a href = "#/facility" class = "profile-SaveBtn"><img src="images/save.png"></a>-->
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<!-- Content -->
+	<div class = "facility-Content">
+
+		<p><h4>Facility Booking Details</h4></p>
+
+<!--
+		<table class="table table-striped" width = "100%">
+			<tr width = "100%">
+				<td><b>Facility</b></td>
+				<td >Tennis Court</td>
+			</tr>
+			<tr width = "100%">
+				<td><b>Advance Booking</b></td>
+				<td >7 (Days)</td>
+			</tr>
+			<tr width = "100%">
+				<td><b>Max Booking</b></td>
+				<td >2 Times a Week</td>
+			</tr>
+			<tr width = "100%">
+				<td><b>Allow Booking</b></td>
+				<td >0 Hours Before Booking</td>
+			</tr>
+			<tr width = "100%">
+				<td><b>Disallow Cancelation</b></td>
+				<td >0 Hours Before Booking</td>
+			</tr>
+			<tr width = "100%">
+				<td><b>Date Required</b></td>
+				<td >24 Aug 2014</td>
+			</tr>
+			<tr width = "100%">
+				<td><b>Seaaion</b></td>
+				<td >9:00 am to 10:00 am</td>
+			</tr>
+			<tr width = "100%">
+				<td><b>Detail</b></td>
+				<td >Tennis Court 1</td>
+			</tr>
+		</table>
+-->
+    
+    <h1>
+    {{FacilityDescription}}
+    </h1>
+    <h2>
+    {{Date| date:'dd/MM/yyyy'}}
+    </h2><br>
+    <h3>{{SessionTime.timeFrom |date:'hh:mm a' }} - {{SessionTime.timeTo |date:'hh:mm a'}}
+    </h3><br>
+
+    
+    
+<!--
+    <p>
+      UserId:
+        <input class = "form-control" type = "number" ng-model="request.UserId" ng-hide ="false"/>
+			</p>
+-->
+    
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary" ng-click="submit()">Confirm Booking</button><br>
+    {{request}}
+
+	</div>
+
+     <!-- Modal1 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Error Message</h4>
+      </div>        
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <h4>Sorry, Your booking is failed since there is no more quota for you.</h4>
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>       
+        
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="delete1()">Retake</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Modal2 -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Picture</h4>
+      </div>
+      <div class="modal-body">
+          
+          <table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<div></div>
+		        </td>
+		        <td width = "80%" align = "center">
+                    <h4>Booking successfully!!!</h4>
+		        </td>
+		        <td width = "10%">
+
+                    <div></div>
+		        </td>
+		    </tr>
+		</table>
+        
+      </div>
+<!--
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="delete2()">Retake</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+-->
+    </div>
+  </div>
+</div>
+
+</div>
+

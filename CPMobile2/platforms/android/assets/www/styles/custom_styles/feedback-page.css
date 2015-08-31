@@ -1,0 +1,90 @@
+
+/*************************************************** Feedback Form *****************************************************/
+
+.feedback-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.feedback-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.feedback-BackBtn, .feedback-SaveBtn{
+  height: 32px;
+  width: 32px;
+}
+
+.feedback-Content{
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.feedback-Inputs{
+  border-radius: 3px;
+  background-color: #E6E6E6;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+/*************************************************** Feedback List *****************************************************/
+
+.feedbackList-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.feedbackList-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.feedbackList-BackBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+.feedbackList-Content{
+  background-color: #FFF;
+}
+
+td{
+  vertical-align: middle;
+}
+
+.feedbackList-AddBtn{
+  height: 32px;
+  width: 32px;
+}
+
+.feedbackList-EditOrdeleteBtn{
+  height: 25px;
+  width: 25px;
+}
+
+.feedbaclList-DeleteItem{
+  color: #FFF;
+  background-color: #D14242;
+}
+
+.feedbaclList-EditItem {
+  color: #FFF;
+  background-color: #A9A9A9;
+}
+
+.removePadding {
+  padding: 0px;
+}
+
+.feedbaclList-Item, .closableData, .feedbackList-Search{
+  padding: 5px 5px 5px 15px;
+}

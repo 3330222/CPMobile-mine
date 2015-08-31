@@ -1,0 +1,28 @@
+.contacts-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.contacts-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.contacts-BackBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+.contacts-Content{
+  padding: 10px;
+  background-color: #FFF;
+  text-align: center;
+}
+
+td{
+  vertical-align: middle;
+}

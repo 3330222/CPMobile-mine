@@ -1,0 +1,32 @@
+.profile-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.profile-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.profile-BackBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+.profile-Content{
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.row {
+  padding-top: 7px;
+}
+
+
+td {
+  vertical-align: middle;
+}

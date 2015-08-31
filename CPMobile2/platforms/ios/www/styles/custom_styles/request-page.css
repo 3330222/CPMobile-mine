@@ -1,0 +1,89 @@
+.request-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.request-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.request-BackBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+.request-Content{
+  padding: 10px;
+  background-color: #FFF;
+}
+
+#request-AddIcon img{
+  height: 32px;
+  width: 32px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*
+*
+*
+*
+*
+*
+*
+*/
+/*--------------------------------------------- Add Service Request -------------------------------------------*/
+
+.addrequest-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.addrequest-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.addrequest-BackBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+.addrequest-Content{
+  padding: 10px;
+  background-color: #FFF;
+}
+
+.addrequest-SaveIcon img{
+  height: 32px;
+  width: 32px;
+}
+
+.addrequest-Inputs{
+  border-radius: 3px;
+  background-color: #E6E6E6;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.addrequest-PhotoImgs{
+  min-height: 150px;
+  background-color: #999;
+  border-radius: 5px;
+  max-height: 200px;
+}
+
+.addrequest-PhotoImgsHeader img{
+  float: right;
+  height: 32px;
+  width: 32px;
+  margin-right: 7px;
+}

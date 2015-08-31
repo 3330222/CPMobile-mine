@@ -1,0 +1,37 @@
+<div class = "news-Container">
+
+	<!-- Header -->
+	<div class="nav-header news-Header navbar-fixed-top">
+		<table width = "100%" height = "100%">
+		    <tr width = "100%" height = "100%">
+		        <td width = "10%" align = "left">
+		        	<a href = "#/main" class = "news-BackBtn">
+				    	<img src="images/arrow-left.png">
+				    </a>
+		        </td>
+		        <td width = "80%" align = "center">
+		        	Notice &amp; News
+		        </td>
+		        <td width = "10%"></td>
+		    </tr>
+		</table>
+	</div>
+
+	<!-- Content -->
+	<div class = "news-Content">
+		<table width = "100%" height = "100%" class = "table table-striped  table-hover">
+            <tbody>
+			<tr width = "100%" height = "100%">
+				<th >Subject</th>
+				<th >Published</th>
+                </tr>          
+			  <div infinite-scroll='loadMore()' infinite-scroll-distance='0'>
+				<tr width = "100%" height = "100%" ng-repeat="item in todos " ng-click="go(item)">
+					<td width = "60%" align = "center">{{item.subject }}</td>
+					<td width = "40%" align = "center">{{item.updateOn | date:'yyyy-MM-dd' }}</td>
+				</tr>
+                </div>
+			</tbody>
+		</table>
+	</div>
+</div>

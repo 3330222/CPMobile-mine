@@ -1,0 +1,58 @@
+.lostfound-Container{
+  padding-top: 90px;
+  background-color: #333;
+}
+
+.lostfound-Header{
+  top: 45px;
+  color: #FFF;
+  background-color: #76A9DD;
+  text-align: center;
+  height: 45px;
+  font-size: 17px;
+}
+
+.lostfound-BackBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+.lostfound-Content{
+  padding: 10px;
+  background-color: #FFF;
+}
+
+td{
+  vertical-align: middle;
+}
+
+.lostfound-Inputs{
+  border-radius: 3px;
+  background-color: #E6E6E6;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.lostfound-PhotoImgs{
+  min-height: 150px;
+  background-color: #999;
+  border-radius: 5px;
+  max-height: 200px;
+}
+
+.lostfound-PhotoImgsHeader img{
+  float: right;
+  height: 32px;
+  width: 32px;
+  margin-right: 7px;
+}
+
+.lostfound-SaveBtn img{
+  height: 32px;
+  width: 32px;
+}
+
+.lostfound-Switch button{
+  min-width: 100px;
+  text-align: center;
+}

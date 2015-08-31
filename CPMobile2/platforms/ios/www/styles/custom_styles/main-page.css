@@ -1,0 +1,52 @@
+.main-Container{
+  height: 100%;
+}
+
+.main-Content{
+  height: 100%;
+  margin:auto;
+  padding: 50px 0px 00px 0px;
+}
+
+.main-Content table{
+  height: 100%;
+}
+
+.main-LargeIcon{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.main-Icon{
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.main-SmallIcon{
+  max-width: 45px;
+  max-height: 45px;
+}
+
+.main-Label{
+  color: #FFF;
+  width: 75px;
+  height: 55px;
+}
+
+.main-TableCell{
+  border-radius: 3px;
+  height: 98%;
+  width: 98%;
+}
+
+.main-TileImg{
+  padding-top: 10px;
+  height: 80%
+}
+
+.main-TileLabel{
+  height: 20%;
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFF;
+}
